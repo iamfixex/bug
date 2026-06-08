@@ -1,8 +1,8 @@
-# clone it
-git clone https://github.com/iamfixex/bug
-cd bug
+Baixe o repositorio
+git clone https://github.com/yannthales/Scanner-Vulnerabilitys.git
+cd Scanner-Vulnerabilitys
 
-# install python stuff
+# instalar python stuff
 pip install requests termcolor pyfiglet aiohttp
 
 # optional but recommended - for advanced features
@@ -11,15 +11,14 @@ go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 go install -v github.com/owasp-amass/amass/v4/...@master
 
-# update nuclei templates
+# atualizar nuclei 
 nuclei -update-templates
 
-# get wordlists for fuzzing
+# pegar wordlists para fuzzing
 sudo apt install seclists
-# or just grab dirb's common.txt
 
 
-vulnerability test reference
+Referencia de vulnerabilidades
 
 Test #  | Name                    | Severity
 --------|-------------------------|----------
